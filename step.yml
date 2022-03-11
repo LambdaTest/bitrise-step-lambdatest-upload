@@ -32,10 +32,12 @@ deps:
     - name: git
     - name: wget
     - name: jq
+    - name: ack
   apt_get:
     - name: git
     - name: wget
     - name: jq
+    - name: ack
 
 toolkit:
   bash:
@@ -67,7 +69,7 @@ inputs:
       is_sensitive: true
       summary: Your Lambdatest access key
       title: Lambdatest access key
-  - custom_id:
+  - custom_id: $LAMBDATEST_CUSTOM_ID
     opts:
       summary: Custom id to distinguish uploads in case there are multiple apps
       title: Custom Id
