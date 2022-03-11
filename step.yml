@@ -67,10 +67,10 @@ inputs:
       is_sensitive: true
       summary: Your Lambdatest access key
       title: Lambdatest access key
-  # - custom_id:
-  #   opts:
-  #     summary: Custom id to distinguish uploads in case there are multiple apps
-  #     title: Custom Id
+  - custom_id:
+    opts:
+      summary: Custom id to distinguish uploads in case there are multiple apps
+      title: Custom Id
 
 outputs:
   - LAMBDATEST_APP_URL:
