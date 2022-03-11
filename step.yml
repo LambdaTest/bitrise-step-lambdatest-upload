@@ -76,7 +76,7 @@ outputs:
   - LAMBDATEST_APP_URL:
     opts:
       description: |
-        The app url returned by Lambdatest App Automate with the following format "://..."". 
+        The app url returned by Lambdatest App Automate with the following format "lt://..."". 
         Use this in your remote device tests, usually through your capabilities configuration
       summary: The app URL used in your App Automate's remote device tests
       title: Lambdatest App Automate App URL
