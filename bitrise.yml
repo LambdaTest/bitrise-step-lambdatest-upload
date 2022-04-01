@@ -9,7 +9,7 @@ app:
     - BITRISE_STEP_ID: lambdatest-upload
     - BITRISE_STEP_VERSION: "0.0.1"
     - BITRISE_STEP_GIT_CLONE_URL: https://github.com/LambdaTest/bitrise-step-lambdatest-upload.git
-    - MY_STEPLIB_REPO_FORK_GIT_URL: git@github.com:LambdaTest/bitrise-steplib.git
+    - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/LambdaTest/bitrise-steplib.git
 
 workflows:
   test:
