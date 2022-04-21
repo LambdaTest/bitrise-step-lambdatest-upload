@@ -77,8 +77,6 @@ inputs:
       summary: Custom Id to run your automation on the same app instead of remembering app_url
       title: Custom Id
       
-
-
 outputs:
   - LAMBDATEST_APP_URL:
     opts:
