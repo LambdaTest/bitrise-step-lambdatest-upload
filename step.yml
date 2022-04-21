@@ -2,7 +2,7 @@ title: LambdaTest Upload
 summary: |
   Upload APK/IPA files to LambdaTest's App Automate
 description: |
-  Upload your build files to LambdaTest for remote device testing. Upload your IPA/APK file to LambdaTest App Automation and get back the app's url for your remote device tests
+  Upload your build files to LambdaTest for remote device testing on Real Devices. Upload your IPA/APK file to LambdaTest App Automation and get back the app's url for your remote device tests.
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-upload
 source_code_url: https://github.com/LambdaTest/bitrise-step-lambdatest-upload
 support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-upload/issues
@@ -64,11 +64,19 @@ inputs:
       is_sensitive: true
       summary: Your LambdaTest access key
       title: LambdaTest access key
-  - custom_id: 
+  - app_name: 
     opts:
+      description: |
+        The name of your application
+      is_required: true
+      summary: Your application name
+      title: Application Name
+  - custom_id: ""
+    opts:
+      is_required: false
       summary: Custom Id to run your automation on the same app instead of remembering app_url
       title: Custom Id
-
+      
 outputs:
   - LAMBDATEST_APP_URL:
     opts:

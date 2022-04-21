@@ -35,6 +35,8 @@ workflows:
             - upload_path: $UPLOAD_PATH
             - lambdatest_username: $LAMBDATEST_USERNAME
             - lambdatest_access_key: $LAMBDATEST_ACCESS_KEY
+            - app_name: $APP_NAME
+            - custom_id: $CUSTOM_ID
       - script:
           inputs:
             - content: |
