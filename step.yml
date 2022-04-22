@@ -64,7 +64,7 @@ inputs:
       is_sensitive: true
       summary: Your LambdaTest access key
       title: LambdaTest access key
-  - app_name: 
+  - app_name: "Untitled"
     opts:
       description: |
         The name of your application
