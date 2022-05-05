@@ -22,5 +22,5 @@ else
     -o ".upload-app-response.json"
 fi
 
-APP_URL=$(cat ".upload-app-response.json" | ack -o --match '(?<=app_url\":")([_\%\&=\?\.aA-zZ0-9:/-]*)')
+APP_URL=$(cat ".upload-app-response.json" | jq -j '.app_url')
 envman add --key LAMBDATEST_APP_URL --value ${APP_URL}

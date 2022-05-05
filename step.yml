@@ -26,9 +26,11 @@ run_if: ""
 deps:
   brew:
     - name: curl
+    - name: jq
     - name: ack
   apt_get:
     - name: curl
+    - name: jq
     - name: ack
 
 toolkit:
