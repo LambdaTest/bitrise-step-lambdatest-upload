@@ -9,7 +9,7 @@ CUSTOM_ID=${custom_id}
 
 if [ -z "${UPLOAD_PATH##*http*}" ]; then
     curl --location --request POST "https://$lambdatest_username:$lambdatest_access_key@manual-api.lambdatest.com/app/upload/realDevice" \
-    --header 'Content-Type: application/json' \
+    --header "Content-Type: application/json" \
     --data-raw '{"url":"'$UPLOAD_PATH'","custom_id":"'$custom_id'", "name":"'$APP_NAME'"}' \
     -o ".upload-app-response.json"
 else
