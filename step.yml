@@ -45,8 +45,8 @@ inputs:
         The app file you want to upload to LambdaTest, usually `$BITRISE\_APK\_PATH`
         or `$BITRISE\_IPA\_PATH`
       title: A Bitrise generated APK or IPA path
-    
-  - lambdatest_username: 
+
+  - lambdatest_username:
     opts:
       description: |
         The username you use to log into your LambdaTest account
@@ -54,7 +54,7 @@ inputs:
       is_sensitive: true
       summary: Your LambdaTest username
       title: LambdaTest username
-  - lambdatest_access_key: 
+  - lambdatest_access_key:
     opts:
       description: |
         The access key you use to log into your LambdaTest account
@@ -74,7 +74,14 @@ inputs:
       is_required: false
       summary: Custom Id to run your automation on the same app instead of remembering app_url
       title: Custom Id
-      
+  - app_visibility: "individual"
+    opts:
+      description: |
+        Whether to show the app to just the account that uploaded the file ("individual"), or to everyone ("team")
+      is_required: false
+      summary: App visibility on LambdaTest
+      title: App Visibility
+
 outputs:
   - LAMBDATEST_APP_URL:
     opts:
