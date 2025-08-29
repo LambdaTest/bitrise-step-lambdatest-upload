@@ -1,11 +1,7 @@
 #!/bin/bash
 set -e
+set -x
 set -o pipefail
-
-# debug log
-if [ "${show_debug_logs}" == "true" ]; then
-  set -x
-fi
 
 UPLOAD_PATH=${upload_path}
 APP_NAME=${app_name}

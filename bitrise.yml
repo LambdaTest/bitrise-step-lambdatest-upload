@@ -7,7 +7,7 @@ app:
     - A_SECRET_PARAM: $A_SECRET_PARAM
     # If you want to share this step into a StepLib
     - BITRISE_STEP_ID: lambdatest-upload
-    - BITRISE_STEP_VERSION: "4.1.0"
+    - BITRISE_STEP_VERSION: "4.2.0"
     - BITRISE_STEP_GIT_CLONE_URL: https://github.com/LambdaTest/bitrise-step-lambdatest-upload.git
     - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/LambdaTest/bitrise-steplib.git
 
@@ -38,6 +38,7 @@ workflows:
             - app_name: $APP_NAME
             - app_visibility: $APP_VISIBILITY
             - custom_id: $CUSTOM_ID
+            - show_debug_logs: false
       - script:
           inputs:
             - content: |

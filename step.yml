@@ -54,6 +54,7 @@ inputs:
       is_sensitive: true
       summary: Your LambdaTest username
       title: LambdaTest username
+
   - lambdatest_access_key:
     opts:
       description: |
@@ -62,6 +63,7 @@ inputs:
       is_sensitive: true
       summary: Your LambdaTest access key
       title: LambdaTest access key
+
   - app_name: "Untitled"
     opts:
       description: |
@@ -69,11 +71,13 @@ inputs:
       is_required: true
       summary: Your application name
       title: Application Name
+
   - custom_id: ""
     opts:
       is_required: false
       summary: Custom Id to run your automation on the same app instead of remembering app_url
       title: Custom Id
+
   - app_visibility: "individual"
     opts:
       description: |
@@ -85,9 +89,9 @@ inputs:
   - show_debug_logs: "false"
     opts:
       category: Debug
-      title: "Show debug logs?"
       description: |
-        If debug=true the step will print debug infos
+        When enabled, prints detailed debug information for troubleshooting upload issues.
+      title: Show debug logs
       value_options:
         - "false"
         - "true"
