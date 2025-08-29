@@ -82,6 +82,16 @@ inputs:
       summary: App visibility on LambdaTest
       title: App Visibility
 
+  - show_debug_logs: "false"
+    opts:
+      category: Debug
+      title: "Show debug logs?"
+      description: |
+        If debug=true the step will print debug infos
+      value_options:
+        - "false"
+        - "true"
+
 outputs:
   - LAMBDATEST_APP_URL:
     opts:
