@@ -1,8 +1,8 @@
-title: LambdaTest Upload
+title: TestMu AI (Formerly LambdaTest) Upload
 summary: |
-  Upload APK/IPA files to LambdaTest's App Automate
+  Uploads your APK or IPA to TestMu AI App Automation and returns the app URL.
 description: |
-  Upload your build files to LambdaTest for remote device testing on Real Devices. Upload your IPA/APK file to LambdaTest App Automation and get back the app's url for your remote device tests.
+  Upload your build files to TestMu AI (Formerly LambdaTest) for remote device testing on real devices. Upload your IPA or APK file to TestMu AI App Automation and get back the app's URL for your remote device tests.
 website: https://github.com/LambdaTest/bitrise-step-lambdatest-upload
 source_code_url: https://github.com/LambdaTest/bitrise-step-lambdatest-upload
 support_url: https://github.com/LambdaTest/bitrise-step-lambdatest-upload/issues
